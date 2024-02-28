@@ -4,7 +4,7 @@ Semester Malware Project for Malware Analysis
 # Overview
 This project is going to be focusing on the MyDoom worm that broke out in 2004.
 
-# Things I Know About the MyDoom Virus
+# Things I Know About the MyDoom
 - It was usually deployed onto computers through email phishing, which was very easy to fall for in 2004
 - Replaces a executable known as "taskmon.exe"
 - Adds a DLL library named "shimgapi.dll"
