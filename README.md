@@ -7,7 +7,7 @@ This project is going to be focusing on the MyDoom worm that broke out in 2004.
 # Things I Know About the MyDoom
 - It was usually deployed onto computers through email phishing, which was very easy to fall for in 2004
 - Replaces a executable known as "taskmon.exe"
-- Adds a DLL library named "shimgapi.dll"
+- Adds a DLL named "shimgapi.dll"
 - Opens up TCP ports that are listening to execute files remotely
 - There is a backdoor left open for future access. This left the ability for different types of cyber attacks to be conducted later
 - Any email addresses found in the compromised systems are also sent phishing emails to spread the worm
