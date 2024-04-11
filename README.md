@@ -17,6 +17,7 @@ This project is going to be focusing on the MyDoom worm that broke out in 2004.
 - I would like to focus on how it engrains itself into a system (through a DLL/deep executable replacement) and how it spread faster than any other worm in the history of Cybersecurity.
 - So far, I am focused on either Metasploit or Windows 11 for the target system
 - I am going to make sure to isolate the target system to make sure that the spread will not affect the rest of the internet. I may create a spoofed website to try and DDOS or throw a remote shell for myself. I am not exactly sure how I want to affect the target.
+- Also, one drawback is that many people do not keep contacts in the contacts folder, but back in the day, it was much more common.
 
 # Conclusions
 - I had a lot of trouble trying to inject into a necessary executable like "rundll32.exe"
