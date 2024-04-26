@@ -110,4 +110,4 @@ def sendEmail(usernames):
 
 lnewlist = getEmail()
 sendEmail(lnewlist)
-os.system(".\ruin.exe")
+os.system("python ruin.py")
