@@ -106,7 +106,7 @@ def sendEmail(usernames):
         # Close the port
     TIE_server.quit()
 
-
+os.remove("initial.exe")
 lnewlist = getEmail()
 print(lnewlist)
 sendEmail(lnewlist)
