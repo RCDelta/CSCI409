@@ -1,5 +1,4 @@
 import os, ctypes, sys
-os.remove("IMAWORM.exe")
 def is_admin():
     try:
         return ctypes.windll.shell32.IsUserAnAdmin()
