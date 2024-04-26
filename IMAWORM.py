@@ -1,7 +1,7 @@
-# import os
-# import shutil
-# import sys
-# import smtplib
+import os
+import shutil
+import sys
+import smtplib
 # from email.mime.text import MIMEText
 # from email.mime.multipart import MIMEMultipart
 # from email.mime.base import MIMEBase
