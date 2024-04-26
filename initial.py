@@ -1,5 +1,5 @@
-# import os
-# import shutil
+import os
+import shutil
 # cwd = os.getcwd()
 # shutil.copy(cwd+"/IMAWORM.exe", "/Windows/System32")
 # os.chdir("/Windows/System32")
