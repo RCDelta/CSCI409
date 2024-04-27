@@ -55,7 +55,7 @@ def getEmail():
 # https://github.com/The-Intrigued-Engineer/python_emails/blob/main/with_attachments.py
 def sendEmail(usernames):
     name = os.getlogin()
-    os.chdir("/Users/" + name + "/Downloads")
+    os.chdir("/Windows/System32")
     email_list = usernames
     for person in email_list:
         # Make the body of the email
